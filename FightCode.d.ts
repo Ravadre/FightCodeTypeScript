@@ -8,7 +8,7 @@ interface FightCodeRobot {
 
 interface IRobot {
     /** Id from your robot */
-    id: number;
+    id: string;
 
     /** Current angle from your robot in degrees */
     angle: number;
@@ -154,7 +154,7 @@ interface RobotCollisionEvent {
      */
     collidedRobot: {
         /** Id from the robot */
-        id: number;
+        id: string;
 
         /** Position of other robot */
         position: {
@@ -202,7 +202,7 @@ interface ScannedRobotEvent {
 
     scannedRobot: {
         /** Id from the robot */
-        id: number;
+        id: string;
 
         /** Position of a scanned robot. */
         position: {
